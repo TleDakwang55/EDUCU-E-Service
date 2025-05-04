@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDU E-Service</title>
+    <title>Other Page</title>
 </head>
 <body>
-    <a href="../public/index.php"><span lang="th">หน้าหลัก</span></a>
+
+    <h1>This is the content of another page</h1>
+
+    <?php
+        // Use include to fetch the file
+    include '../public/index.php';
+
+        // Or use require, which will throw a critical error if the file is not found
+        require '../public/index.php';
+    ?>
+
+    <p>Footer content of another page</p>
+
 </body>
 </html>
